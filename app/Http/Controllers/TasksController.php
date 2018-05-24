@@ -120,8 +120,8 @@ class TasksController extends Controller
      */
     public function destroy($id)
     {
-         $message = Message::find($id);
-        $message->delete();
+         $task = Task::find($id);
+        $task->delete();
 
         return redirect('/');
     }
